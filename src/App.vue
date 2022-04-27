@@ -1,32 +1,39 @@
-<template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+<template lang="pug">
+  #app.wrapper
+    header.header.header__container
+      .header__logo.header__logo-container
+        img( src="./assets/images/svg/Logo.svg")
+      nav.header-main-nav
+        router-link(
+          class="header__nav-link"
+          exact
+          v-for="link in navigation"
+          :key="link.route"
+          :to="{ name: link.route }"
+            ) {{ link.label }}
+      .header__btn-group
+          button.header__btn-number +7 (495) 823-54-12
+            img( src="./assets/images/svg/telephone.svg")
+          button.header__btn-basket
+            img( src="./assets/images/svg/basket.svg")
+    main 111
+      router-view
+    footer 222
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  name: 'App',
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  data () {
+    return {
+      navigation: [
+        { label: 'Главная', route: 'main' },
+        { label: 'Магазин', route: 'shop' },
+        { label: 'О бренде', route: 'about' },
+        { label: 'Контакты', route: 'contacts' }
+      ]
     }
   }
 }
-</style>
+</script>

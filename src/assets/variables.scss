@@ -1,0 +1,75 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+
+// Default
+
+$color-default-black: rgb(0, 0, 0);
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-font-dark:                 #292930;
+$color-font-dark2:                #262626;
+$color-font-base:                 #687283;
+$color-font-base2:                #626262;
+$color-font-base3:                #2f333a;
+$color-font-gray:                 #b2b2b2;
+$color-font-gray2:                #848E99;
+$color-font-gray3:                #687283;
+$color-font-alt:                  #ffffff;
+
+$color-decoration:                #93397F;
+$color-decoration-light:          #d096c3;
+$color-decoration-dark:           #3c2f4d;
+$color-yellow:                    #f3c62d;
+$color-gray:                      #99a8c0;
+$color-bg-dark:                   #2e213f;
+$color-green:                     #009e06;
+$color-blue:                      #2332b6;
+$color-border-gray:               #ededed;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+//---------------------------------
+
+$font-family:                     "Montserrat", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+//---------------------------------
+
+$viewport--sm:                      320px;
+$viewport--sm--extra:               450px;
+$viewport--md--extra:               576px;
+$viewport--md:                      768px;
+$viewport--lg:                      1024px;
+$viewport--lg--extra:               1200px;
+$viewport--xl:                      1400px;
+$viewport--xxl:                     1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
+
+// Border
+//---------------------------------
+
+$bdrs:                              4px;
+
+// Header height
+
+$header-height-desktop:             136px;
+$header-height-tablet:              71px;
+$header-height-mobile:              64px;
