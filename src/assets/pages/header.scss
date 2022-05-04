@@ -7,31 +7,41 @@ justify-content: space-between;
 width: 100%;
 }
 .header__logo{
-
+padding-right: 15%;
 }
 .header__logo-container{
 
 }
 .header-main-nav{
-
+display: flex;
+justify-content: space-between;
+flex-grow: 1;
+white-space: nowrap;
+  // &:last-of-type{
+  //   padding-right: 15%;
+  // }
 }
 .header__nav-link{
-
+  padding-right: 45px;
 }
 .header__btn-group{
   display: flex;
 
 }
 .header__btn-number {
-
+ white-space: nowrap;
+ padding-right: 67px;
 }
 .header__btn-basket{
+}
+.header__btn-number-img{
+  position: absolute;
+  left: -30px;
+}
+.header__btn-basket-img{
 
 }
+
 .container{
-  width: 100%;
-  max-width: 1150px;
-  padding: 0 50px;
-  margin: 0 auto;
-  box-sizing: border-box;
+
 }

@@ -12,10 +12,10 @@
           :to="{ name: link.route }"
             ) {{ link.label }}
       .header__btn-group
-          button.header__btn-number +7 (495) 823-54-12
-            img( src="./assets/images/svg/telephone.svg")
-          button.header__btn-basket
-            img( src="./assets/images/svg/basket.svg")
+        button.header__btn-number +7 (495) 823-54-12
+          img.header__btn-number-img( src="./assets/images/svg/telephone.svg")
+        button.header__btn-basket
+          img.header__btn-basket-img( src="./assets/images/svg/basket.svg")
     main 111
       router-view
     footer 222
